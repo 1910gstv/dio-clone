@@ -40,6 +40,8 @@ export const SearchInputContainer = styled.div`
   border-radius: 8px;
   padding: 2px 5px;
   margin: 0px 12px;
+
+  display: flex;
 `;
 
 export const Menu = styled.a`
@@ -70,7 +72,8 @@ export const UserPicture = styled.img`
 `;
 
 export const Input = styled.input`
-  background: #fff;
+  background: transparent;
   flex: 1;
   border: 0;
+  outline:none;
 color: #fff;`;

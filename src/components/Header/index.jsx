@@ -5,11 +5,9 @@ import {
   Input,
   SearchInputContainer,
   Row,
-  Column,
   Container,
   Menu,
   MenuRight,
-  UserPicture,
   Wrapper,
 } from "./styles";
 
@@ -18,7 +16,7 @@ const Header = () => {
     <Wrapper>
       <Container>
         <Row>
-          <img src="" alt="" />
+          <img src="https://play-lh.googleusercontent.com/P3xTS7gQrh0S2e_99KmHVGiVUcvepvj4eFFhqU_y6XFRegRoo1fTZ8r6t1MUsmfRxXNJ" alt="" width='47px' height='47px'/>
           <SearchInputContainer>
             <Input placeholder="...Buscar" />
           </SearchInputContainer>

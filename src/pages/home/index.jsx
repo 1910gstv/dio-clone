@@ -1,11 +1,31 @@
 import { Button } from "../../components/Button";
+import { Header } from "../../components/Header";
+
+import { Title, TitleHighlight, TextContent, Container } from "./styles";
 
 const Home = () => {
   return (
     <>
-      <h1>Home</h1>
-      <Button title="Teste 1" />
-      <Button variant="secondary" title="Teste 2" />
+      <Header />
+      <Container>
+        <div>
+          <Title>
+            <TitleHighlight>
+              Implemente <br />
+            </TitleHighlight>
+            o seu futuro global agora.
+          </Title>
+          <TextContent>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
+            dolor! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Facere nostrum culpa, fugit dolorum quibusdam corporis.
+          </TextContent>
+          <Button title='Começar agora' variant='secondary' onClick={() => null} />
+        </div>
+        <div>
+          <img src="https://img.freepik.com/free-photo/front-view-elegant-businesswoman-using-laptop_23-2148788847.jpg?w=740&t=st=1709680565~exp=1709681165~hmac=26dea23f6dc4e7f4495cfef477f8b534f877452dfa98b93210038177054a7722" alt="#" width='550px' />
+        </div>
+      </Container>
     </>
   );
 };
