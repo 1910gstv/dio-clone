@@ -21,7 +21,7 @@ const Card = () =>  {
             <HasInfo>
                 <h4>#HTML #CSS #Javascript</h4>
                 <p>
-                     16
+                     16 ...
                 </p>
             </HasInfo>
         </Content>
