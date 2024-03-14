@@ -7,9 +7,10 @@ export const CardContainer = styled.div`
   margin-bottom: 24px;
 `;
 
-export const ImageBackground = styled.div`
+export const ImageBackground = styled.img`
   width: 100%;
   height: 180px;
+  object-fit: cover;
 `;
 
 export const Content = styled.div`
@@ -52,6 +53,7 @@ export const UserPicture = styled.img`
   height: 32px;
   border-radius: 22px;
   border: 3px solid #fff;
+  object-fit: cover;
 
 `
 

@@ -5,10 +5,10 @@ import { FitThumbsUp } from 'react-icons'
 const Card = () =>  {
   return (
     <CardContainer>
-        <ImageBackground />
+        <ImageBackground src='https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'/>
         <Content>
             <UserInfo>
-                <UserPicture />
+                <UserPicture src='https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'/>
                 <div>
                     <h4>Pablo Henrique</h4>
                     <p>Há 8 minutos</p>
@@ -21,7 +21,7 @@ const Card = () =>  {
             <HasInfo>
                 <h4>#HTML #CSS #Javascript</h4>
                 <p>
-                     16 ...
+                     16
                 </p>
             </HasInfo>
         </Content>
