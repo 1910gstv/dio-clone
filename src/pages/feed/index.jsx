@@ -11,6 +11,7 @@ const Feed = () => {
       <Header />
       <Container>
         <Card />
+        <UserInfo nome="Josefina Fina" percentual={35} />
       </Container>
     </>
   );
