@@ -14,23 +14,24 @@ export const Container = styled.main`
 
 export const Wrapper = styled.div`
   max-width: 300px;
-  `
+`;
+
+
 
 export const Column = styled.div`
- flex: 1;
- display: flex;
- flex-direction: column;
- align-items: center;
-`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
 export const Row = styled.div`
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- align-items: center;
- margin-top: 20px;
-`
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+`;
 
 export const Title = styled.h2`
   font-family: "Open Sans";
@@ -43,7 +44,6 @@ export const Title = styled.h2`
   color: #fff;
 `;
 
-
 export const TitleLogin = styled.p`
   font-family: "Open Sans";
   font-style: normal;
@@ -52,7 +52,6 @@ export const TitleLogin = styled.p`
   width: 320px;
   margin-bottom: 20px;
   line-height: 44px;
-
 `;
 
 export const SubtitleLogin = styled.p`
@@ -62,7 +61,6 @@ export const SubtitleLogin = styled.p`
   font-size: 18px;
   margin-bottom: 35px;
   line-height: 25px;
-
 `;
 
 export const ForgetText = styled.h2`
@@ -72,7 +70,7 @@ export const ForgetText = styled.h2`
   font-size: 14px;
   line-height: 25px;
 
-  color: #E5e044;
+  color: #e5e044;
 `;
 
 export const CreateText = styled.h2`
@@ -82,7 +80,5 @@ export const CreateText = styled.h2`
   font-size: 14px;
   line-height: 25px;
 
-  color: #E23dd7;
+  color: #e23dd7;
 `;
-
-
