@@ -49,13 +49,13 @@ const Login = () => {
 
   const onSubmit = async (formData) => {
     try {
-      const { data } = await api.post(
-        `users?email=${formData.email}&senha=${formData.password}`
+      const { data } = await api.get(
+        `/users?email=${formData.email}&senha=${formData.password}`
       );
       if (data.length == 1) {
         navigate("/feed");
       } else {
-        alert('E-mail inválido')
+        alert("E-mail inválido");
       }
     } catch {
       alert("houve um erro ");
