@@ -10,6 +10,7 @@ export const GlobalStyle = createGlobalStyle`
  body {
     background-color: #1e192c;
     color: #fff;
+    font-family: "Open Sans";
  }
 
 `

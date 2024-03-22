@@ -52,6 +52,7 @@ const Login = () => {
       const { data } = await api.get(
         `/users?email=${formData.email}&senha=${formData.password}`
       );
+      console.log(data);
       if (data.length == 1) {
         navigate("/feed");
       } else {
