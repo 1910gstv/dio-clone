@@ -20,6 +20,9 @@ import {
   SubtitleLogin,
   TitleLogin,
   Row,
+  BottomText,
+  SpanText,
+  SubtitleBottomText,
 } from "./styles";
 
 const schema = yup.object({
@@ -76,6 +79,10 @@ const Register = () => {
     }
   };
 
+  const returnLogin = () => {
+    navigate("/login");
+  };
+
   return (
     <>
       <Header />
@@ -111,9 +118,24 @@ const Register = () => {
                 control={control}
                 leftIcon={<MdLock />}
               ></Input>
-              <Button title="Cadastrar" type="submit"></Button>
+              <Button
+                title="Cadastrar"
+                type="submit"
+                variant="secondary"
+              ></Button>
             </form>
-            <Row></Row>
+            <Row>
+              <SubtitleBottomText>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                quam ab reprehenderit nesciunt animi sit.
+              </SubtitleBottomText>
+            </Row>
+            <Row>
+              <BottomText>
+                Já tenho conta.
+                <SpanText onClick={returnLogin}>Fazer Login</SpanText>
+              </BottomText>
+            </Row>
           </Wrapper>
         </Column>
       </Container>

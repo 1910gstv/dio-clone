@@ -25,7 +25,6 @@ export const Column = styled.div`
 export const Row = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   margin-top: 20px;
 `;
@@ -53,4 +52,31 @@ export const SubtitleLogin = styled.p`
   font-size: 18px;
   margin-bottom: 35px;
   line-height: 25px;
+`;
+
+export const SubtitleBottomText = styled.p`
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+`;
+
+export const BottomText = styled.h2`
+  display: inline;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+
+  color: #fff;
+`;
+
+export const SpanText = styled.h2`
+  display: inline;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+
+  color: #e23dd7;
 `;
