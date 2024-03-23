@@ -19,6 +19,7 @@ import {
   Title,
   SubtitleLogin,
   TitleLogin,
+  Row,
 } from "./styles";
 
 const schema = yup.object({
@@ -44,26 +45,34 @@ const Register = () => {
     const email = formData.email;
     const password = formData.password;
 
-    console.log(nome, email, password);
+    console.log(formData);
 
     try {
-      api
-        .post("/users", {
-          name: nome,
-          email: email,
-          senha: password
-        })
-        .then((response) => {
-          if (
-            response.data.name != null &&
-            response.data.email != null &&
-            response.data.senha != null
-          ) {
-            navigate("/login");
-          }
-        });
-    } catch {
-      alert("Houve um erro, tente novamente");
+      api.get("/users").then((response) => {
+        const users = response.data.map((user) => user.email);
+        if (users.indexOf(email) > -1) {
+          console.log("Usuário já existe");
+        } else {
+          api
+            .post("/users", {
+              name: nome,
+              email: email,
+              senha: password,
+            })
+            .then((response) => {
+              if (
+                response.data.name != null &&
+                response.data.email != null &&
+                response.data.senha != null
+              ) {
+                console.log("Usuario cadastrado");
+                navigate("/login");
+              }
+            });
+        }
+      });
+    } catch (err) {
+      console.log(err);
     }
   };
 
@@ -104,6 +113,7 @@ const Register = () => {
               ></Input>
               <Button title="Cadastrar" type="submit"></Button>
             </form>
+            <Row></Row>
           </Wrapper>
         </Column>
       </Container>

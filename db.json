@@ -23,6 +23,42 @@
       "email": "livia@livia.com",
       "senha": "as1234",
       "id": 29
+    },
+    {
+      "name": "jessica",
+      "email": "jessica@jess.com",
+      "senha": "123456",
+      "id": 30
+    },
+    {
+      "name": "Castelo",
+      "email": "castelo@castelo.com",
+      "senha": "123456",
+      "id": 31
+    },
+    {
+      "name": "Fernanda",
+      "email": "fer@nanda.com",
+      "senha": "123456",
+      "id": 32
+    },
+    {
+      "name": "Maria Joaquina",
+      "email": "maria@joaquina.com",
+      "senha": "123456",
+      "id": 33
+    },
+    {
+      "name": "Josefina a fina",
+      "email": "jose@finafina.com",
+      "senha": "123456",
+      "id": 49
+    },
+    {
+      "name": "Mary Joana",
+      "email": "joana@mary.com",
+      "senha": "123456",
+      "id": 50
     }
   ]
 }

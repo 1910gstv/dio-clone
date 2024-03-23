@@ -53,7 +53,7 @@ const Login = () => {
         `/users?email=${formData.email}&senha=${formData.password}`
       );
       console.log(data);
-      if (data.length == 1) {
+      if (data.length >= 1) {
         navigate("/feed");
       } else {
         alert("E-mail inválido");
